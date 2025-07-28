@@ -1,2 +1,2 @@
 ## Objetivo geral
-![Arquitetura](/docs/arquitetura.jpg)
+![Arquitetura](/docs/arquitetura.png)
