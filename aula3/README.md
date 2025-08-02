@@ -1,0 +1,1 @@
+- Ler artigo sobre TDD - https://medium.com/@pablodarde/testes-unit%C3%A1rios-com-tdd-test-driven-development-657f3dadad06

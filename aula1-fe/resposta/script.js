@@ -17,10 +17,10 @@ function registrationConfirmation() {
 
 // nome-função(parâmetros) {comandos}
 // = atribuição
-let x = 5; // x recebe o valor 5
+// let x = 5; // x recebe o valor 5
 
-// == comparação de valor
-console.log('5' == 5); // true, pois compara apenas o valor
+// // == comparação de valor
+// console.log('5' == 5); // true, pois compara apenas o valor
 
-// === comparação de valor e tipo
-console.log('5' === 5); // false, pois compara valor e tipo
+// // === comparação de valor e tipo
+// console.log('5' === 5); // false, pois compara valor e tipo

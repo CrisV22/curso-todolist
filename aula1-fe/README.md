@@ -17,7 +17,7 @@
 
 ![Exemplo de merge](./docs/merge-example.png)
 
-### ⚙️ Comandos comuns do Git
+### ⚙️ Comandos
 
 #### Configuração de usuário
 
@@ -27,7 +27,7 @@ git config --global user.email "seu@email-github.com"
 git config --global --list
 ```
 
-#### Comandos principais
+#### Atualização repositório remoto
 
 ```bash
 git init
