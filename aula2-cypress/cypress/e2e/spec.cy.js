@@ -8,8 +8,7 @@ describe('Funcional', () => {
     
     cy.get('[any-property="teste"]').click()
     
-    cy.on('window:alert', (str) => {
-      expect(str).to.equal('Tarefa adicionada com sucesso!')
+    cy.on('window:alert', (msg) => {expect(msg).to.equal('Tarefa adicionada com sucesso!')
     })
 
   })
@@ -17,11 +16,13 @@ describe('Funcional', () => {
     it('Não deve adicionar uma tarefa sem nome', () => {
     cy.visit('http://127.0.0.1:5500/aula2-cypress/index.html')
     
-    cy.get('#taskInput')
+    cy.get('#taskInput').should('have.value', '')
+    
     cy.get('#addTaskButton').click()
     
-    cy.on('window:alert', (str) => {
-      expect(str).to.equal('Por favor, preencha a tarefa antes de adicionar.')
+    
+    cy.on('window:alert', (msg) => {
+      expect(msg).to.equal('Por favor, preencha a tarefa antes de adicionar.')
     })
 
   })
