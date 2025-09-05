@@ -1,1 +1,22 @@
-- Ler artigo sobre TDD - https://medium.com/@pablodarde/testes-unit%C3%A1rios-com-tdd-test-driven-development-657f3dadad06
+## 🎯 Objetivo
+
+![Preview](./docs/preview.gif)
+
+### 🏗️ Arquitetura
+
+- **React**: biblioteca JavaScript para criar interfaces de usuários.
+- **Vite**: builds rápidos e hot reload.
+
+```bash
+npm create vite@latest
+npm install
+npm run dev
+```
+
+### 🎨 Estilização
+
+Tailwind: framework CSS para rapidez no design
+
+```bash
+npm install tailwindcss @tailwindcss/vite
+```
