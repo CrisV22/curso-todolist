@@ -1,8 +1,9 @@
+// Com state e map
 import "./App.css";
 import { useState } from "react";
-import { v4 } from "uuid";
 
-function App() {
+function AppV3() {
+  // Sempre que queremos que algo na tela seja variável, utilizamos o state.
   const [tasks, setTasks] = useState([
     {
       id: "8f7a9356-18b0-4506-8bbf-f092b736f8c5",
@@ -23,17 +24,6 @@ function App() {
       isCompleted: false,
     },
   ]);
-
-  function addItem() {
-    const newTask = {
-      id: v4(),
-      title: "Tailwind 3",
-      description: "Descrição",
-      isCompleted: false,
-    };
-    setTasks([...tasks, newTask]);
-    console.log(tasks);
-  }
 
   return (
     <div className="min-h-screen w-screen bg-[#05080f] space-y-11 flex flex-col items-center">
@@ -76,26 +66,31 @@ function App() {
           />
         </div>
 
-        <button
-          onClick={() => addItem()}
-          className="bg-gradient-to-r from-[#1E3A8A] to-[#2563EB] text-black py-3 rounded-lg font-medium flex gap-2 w-full justify-center hover:from-[#2563EB] hover:to-[#1E3A8A] transition-all"
-        >
+        <button className="bg-gradient-to-r from-[#1E3A8A] to-[#2563EB] text-black py-3 rounded-lg font-medium flex gap-2 w-full justify-center hover:from-[#2563EB] hover:to-[#1E3A8A] transition-all">
           <span>+</span>
           <span>Criar Tarefa</span>
         </button>
       </div>
 
       {/* TASKLIST */}
-      {/* Sempre que queremos que algo na tela seja variável, utilizamos o state. */}
       <div>
+        {/*
+        <ul className="text-slate-200">
+          {tasks.forEach((task) => (
+            <li>{task.title}</li>
+          ))}
+        </ul>
+        */}
+
         <ul className="text-slate-200">
           {tasks.map((task) => (
             <li key={task.id}>{task.title}</li>
           ))}
+          {/* {console.log(tasks)} */}
         </ul>
       </div>
     </div>
   );
 }
 
-export default App;
+export default AppV3;
