@@ -2,52 +2,91 @@
 
 ![Preview](./docs/preview.gif)
 
-### 📚 Teoria
+---
 
-Como dois sistemas se comunicam?
-Analogia: Americano conversando com alguém que não sabe Inglês.
+## 📚 Teoria
 
-História: Restaurante
-FE <-> API <-> BE
+### 🤝 Como dois sistemas se comunicam?
 
-Definição: Application Programming Interface, Interface de Programação de Aplicações
+- Analogia: Um americano conversando com alguém que não sabe inglês.
+- Comunicação exige uma "tradução" — é aí que entra a API!
 
-### API, endpoints e API REST
+### 🍽️ História: Restaurante
 
-![REST API arquitetura](/aula6-react-flask/docs/REST-API.png)
-Link: https://medium.com/@crystian.lf/entenda-sobre-api-de-uma-vez-por-todas-fb5475df8db0
+- Comunicação entre camadas:
+  - **Frontend (FE)** ⟷ **API** ⟷ **Backend (BE)**
 
-API REST: Utiliza a estrutura REST (Representational State Transfer, Estado de Transferência Representacional).
+### 🧠 Definição
 
-    Create - POST
-    Read - GET
-    Update - PUT
-    Delete - DELETE
+- **API**: _Application Programming Interface_  
+  Interface de Programação de Aplicações — um conjunto de regras que permite que sistemas diferentes conversem entre si.
 
-### FLASK
+---
 
-```python
-Instalação: pip install Flask
-Teste: flask --version
-Rodar servidor: flask --app server run
+## 🔗 API, Endpoints e API REST
+
+![REST API arquitetura](/aula6-react-flask/docs/REST-API.png)  
+🔗 [Entenda sobre API de uma vez por todas](https://medium.com/@crystian.lf/entenda-sobre-api-de-uma-vez-por-todas-fb5475df8db0)
+
+### 🧭 API REST
+
+- Baseada na arquitetura **REST** (_Representational State Transfer_).
+- Utiliza os métodos HTTP para operações:
+
+```text
+🆕 Create → POST
+🔍 Read → GET
+✏️ Update → PUT
+❌ Delete → DELETE
 ```
 
-### CORS
+---
 
-    Definição: Cross-Origin Resource Sharing, Compartilhamento de Recursos entre Origens Diferentes;
+## 🐍 FLASK
 
-    Lógica: protocolo + domínio + porta;
-
-    Situação: Ocorre quando o BE não libera acesso para o FE.
-
-Exemplo:
-
-http://localhost:5173 → Frontend (React)
-
-http://localhost:5000 → Backend (Python)
+### ⚙️ Instalação e uso
 
 ```python
-Instalação CORS: pip install flask-cors
+# Instalar Flask
+pip install Flask
+
+# Testar instalação
+flask --version
+
+# Rodar servidor
+flask --app server run
 ```
 
-### Perguntas
+---
+
+## 🌐 CORS
+
+### 📖 Definição
+
+- **CORS**: _Cross-Origin Resource Sharing_  
+  Compartilhamento de Recursos entre Origens Diferentes.
+
+### 🧩 Lógica
+
+- É definido por: **protocolo + domínio + porta**
+
+### 🚫 Situação comum
+
+- Ocorre quando o **Backend** não libera acesso para o **Frontend**.
+
+### 🧪 Exemplo
+
+```text
+Frontend (React): http://localhost:5173
+Backend (Python): http://localhost:5000
+```
+
+### 🔧 Instalação do CORS
+
+```python
+pip install flask-cors
+```
+
+---
+
+## ❓ Perguntas
